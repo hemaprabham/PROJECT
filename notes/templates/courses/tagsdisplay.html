@@ -1,0 +1,9 @@
+<h2>Tags</h2>
+
+<ul>
+  {% for tag in tags %}
+    <li>{{ tag.description }}</li>
+  {% empty %}
+    <li>No tags available.</li>
+  {% endfor %}
+</ul>

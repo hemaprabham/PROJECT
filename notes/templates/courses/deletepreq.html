@@ -1,0 +1,8 @@
+{% block content %}
+  <h1>Delete Prerequisite</h1>
+  <p>Are you sure you want to delete the prerequisite "{{ prerequisite.description }}"?</p>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit">Delete</button>
+  </form>
+{% endblock %}

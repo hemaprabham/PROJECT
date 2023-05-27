@@ -1,8 +1,0 @@
-{% block content %}
-  <h1>Add Prerequisite</h1>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Add Prerequisite</button>
-  </form>
-{% endblock %}
